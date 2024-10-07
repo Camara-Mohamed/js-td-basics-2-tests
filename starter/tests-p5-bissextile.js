@@ -17,7 +17,25 @@ AUTREMENT DIT :
 2. Initialisez une variable estBissextile à undefined.
 3. Écrivez une série de tests pour vérifier si l'année est bissextile en suivant les règles données.
 4. Si l'année est bissextile, affectez true à la variable estBissextile. Sinon, affectez false.
-5. Affichez le résultat dans la console en fonction de la valeur  : "… est une année bissextile" ou "… est une année non bissextile".
+5. Affichez le résultat dans la console en fonction de la valeur : "… est une année bissextile" ou "… est une année non bissextile".
 
 N'oubliez pas de tester votre programme avec différentes années pour vérifier qu'il fonctionne correctement.
 */
+/*
+const year = prompt(`Entrer une année :`);
+
+let isBissextil = undefined;
+
+isBissextil = ((year % 4 === 0) && !(year % 400 === 0)) || ((year % 4 === 0) && !(year % 100 === 0) || (year % 400 === 0));
+
+if (isBissextil) {
+    isBissextil = true;
+} else {
+    isBissextil = false;
+};
+
+if (isBissextil){
+    console.log(`L'année ${year} est une année bissextile.`);
+}else {
+    console.log(`L'année ${year} est une année non bissextile.`);
+};*/

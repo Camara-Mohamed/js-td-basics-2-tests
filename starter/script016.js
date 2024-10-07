@@ -146,19 +146,19 @@ console.log(`Les jours suivants se sont déjà écoulés depuis le début de la 
 /*
 switch (numberWeek) {
     case 7 :
-        console.log(`samedi, `);
+        console.log(`Lundi, `);
     case 6 :
-        console.log(`vendredi, `);
-    case 5 :
-        console.log(`jeudi, `);
-    case 4 :
-        console.log(`mercredi, `);
-    case 3 :
-        console.log(`mardi, `);
-    case 2 :
-        console.log(`lundi, `);
-    case 1 :
         console.log(`dimanche, `);
+    case 5 :
+        console.log(`samedi, `);
+    case 4 :
+        console.log(`vendredi, `);
+    case 3 :
+        console.log(`jeudi, `);
+    case 2 :
+        console.log(`mercredi, `);
+    case 1 :
+        console.log(`mardi, `);
         break;
     default :
         console.log(`Je n'ai pas compris !`);
