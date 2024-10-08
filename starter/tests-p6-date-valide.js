@@ -27,12 +27,14 @@ N'oubliez pas de tester votre programme avec diverses dates pour vous assurer qu
 
 Vous pouvez utiliser les exemples que vous avez fournis comme point de départ.
 */
-/*
-const day = prompt(`Entrer un jour (1-31) :`);
+
+/*const day = prompt(`Entrer un jour (1-31) :`);
 const month = prompt(`Entrer un mois (ex : janvier) :`);
 const year = prompt(`Entrer une année (ex : 1990) :`);
 
 let maxDays = undefined;
+
+if (day && month && year){
 
 if (month === "janvier" || month === "mars" || month === "mai" || month === "juillet" || month === "août" || month === "octobre" || month === "décembre"){
     maxDays = 31;
@@ -54,4 +56,21 @@ if (isDateValide){
     console.log(`La date du ${day} ${month} ${year} est valide.`);
 } else {
     console.log(`La date du ${day} ${month} ${year} n'est PAS valide.`);
+}
 };*/
+
+/*let i = 20;
+
+while ( i > 0){
+    console.log(i);
+    i--;
+}*/
+
+/*for (let i = 20; i > 0; i-=2){
+    console.log(i);
+}*/
+
+for (let i = 20; i > 0; i-=2){
+    console.log(i);
+}
+
