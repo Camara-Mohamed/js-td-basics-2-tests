@@ -12,7 +12,6 @@
 
 // N'oubliez pas de tester votre programme avec différentes moyennes pour couvrir tous les cas de figure.
 
-/*
 const moyenne = prompt(`Donne-moi la moyenne...`);
 
 if (moyenne < 10) {
@@ -22,4 +21,3 @@ if (moyenne < 10) {
     } else if (moyenne >= 12) {
         console.log(`La moyenne est de ${moyenne}. Le candidat est reçu avec mention !`);
 };
-*/

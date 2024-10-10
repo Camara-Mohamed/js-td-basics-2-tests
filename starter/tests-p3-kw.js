@@ -32,7 +32,7 @@ const isKW1 = kw <= 30;
 // 4. Calculez le coût de cette tranche (KW dans la tranche * 25 centimes) et ajoutez-le à cost.
 if (isKW1){
     cost = kw * 0.25;
-};
+}
 
 // 5. Répétez les étapes 3 et 4 pour les tranches de 31 à 50 KW (20 centimes), de 51 à 70 KW (15 centimes), et les KW restants (10 centimes).
 const isKW2 = kw <= 50;
@@ -44,7 +44,7 @@ if (isKW2){
     cost = (30 * 0.25) + (20 * 0.20) + ((kw - 50) * 0.15);
 }else {
     cost = (30 * 0.25) + (20 * 0.20) + (20 * 0.15) + ((kw - 70) * 0.10);
-};
+}
 
 // 6. Affichez le coût total (cost) en euros dans la console.
 console.log(`Le coût total est de ${cost.toFixed(2)}€ pour une valeur de ${kw} KW.`);

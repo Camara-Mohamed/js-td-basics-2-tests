@@ -45,7 +45,6 @@ switch (nextDay) {
         console.log(`Erreur : jour non reconnu!`);
 }*/
 
-/*
 const nextDay = prompt(`Quel jour sommes nous ?`);
 
 if (nextDay === "lundi") {
@@ -65,7 +64,6 @@ if (nextDay === "lundi") {
 } else {
     console.log(`Erreur : jour non reconnu!`);
 };
-*/
 
 
 /*

@@ -32,10 +32,10 @@ if (isBissextil) {
     isBissextil = true;
 } else {
     isBissextil = false;
-};
+}
 
 if (isBissextil){
     console.log(`L'année ${year} est une année bissextile.`);
 }else {
     console.log(`L'année ${year} est une année non bissextile.`);
-};
+}
