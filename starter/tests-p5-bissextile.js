@@ -22,6 +22,7 @@ AUTREMENT DIT :
 N'oubliez pas de tester votre programme avec différentes années pour vérifier qu'il fonctionne correctement.
 */
 
+/*
 const year = prompt(`Entrer une année :`);
 
 let isBissextil = undefined;
@@ -38,4 +39,28 @@ if (isBissextil){
     console.log(`L'année ${year} est une année bissextile.`);
 }else {
     console.log(`L'année ${year} est une année non bissextile.`);
+}
+*/
+
+function isBissextile(year) {
+    if (year % 4 === 0 && year % 100 !== 0) {
+        return true;
+    }
+
+    if (year % 400 === 0) {
+        return true;
+    }
+
+    return false;
+
+}
+
+function forceUserToEnterAInteger() {
+    let userInput = false;
+
+    while (!userInput) {
+        userInput = parseInt(prompt('Entrez un nombre entier'));
+    }
+
+    return userInput;
 }

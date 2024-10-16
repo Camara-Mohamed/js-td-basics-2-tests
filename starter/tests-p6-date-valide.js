@@ -28,7 +28,7 @@ N'oubliez pas de tester votre programme avec diverses dates pour vous assurer qu
 Vous pouvez utiliser les exemples que vous avez fournis comme point de départ.
 */
 
-const day = prompt(`Entrer un jour (1-31) :`);
+/*const day = prompt(`Entrer un jour (1-31) :`);
 const month = prompt(`Entrer un mois (ex : janvier) :`);
 const year = prompt(`Entrer une année (ex : 1990) :`);
 
@@ -57,7 +57,42 @@ if (day && month && year) {
     } else {
         console.log(`La date du ${day} ${month} ${year} n'est PAS valide.`);
     }
+}*/
+
+const day = parseInt(prompt("Entrez un jour"));
+const month = parseInt(prompt("Entrez un mois"));
+const year = parseInt(prompt("Entrez une année"));
+
+let isValid = false;
+let maxDays = 31;
+
+if (month === 4 || month === 6 || month === 9 || month === 11) {
+    maxDays = 30;
+} else if (month === 2) {
+    maxDays = 28;
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+        maxDays = 29;
+    }
 }
+
+if (day && month && year) {
+    if (day > 0 && month > 0 && year > 0) {
+        if (month <= 12) {
+            if (day <= maxDays) {
+                console.log(`La date ${day}/${month}/${year} est valide.`);
+            } else {
+                console.log(`Le jour doit être inférieur ou égal à ${maxDays}`);
+            }
+        } else {
+            console.log("Le mois doit être inférieur ou égal à 12.");
+        }
+    } else {
+        console.log("Un nombre POSITIF.");
+    }
+} else {
+    console.log("Entrez un NOMBRE svp.");
+}
+
 
 
 let i = 20;
